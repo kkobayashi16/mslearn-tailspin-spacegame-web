@@ -38,10 +38,6 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: Build the project - Release
   inputs:
-    command: build
-    arguments: --no-restore --configuration Release
-    projects: '**/*.csproj'
-inputs:
     command: publish
     projects: '**/*.csproj'
     publishWebProjects: false
